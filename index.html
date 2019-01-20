@@ -7,14 +7,13 @@
     <title>Trillo &mdash; Your all in one booking</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
 
-    <link rel="stylesheet" href="Trillo/css/main.css">
+    <link rel="stylesheet" href="css/main.css">
 
 </head>
 <body>
     <div class="container">
         <header class="header">
             <img src="img/My logo.png" alt="tillo logo" class="header__logo">
-            <p>I'm just learning how to use git efficiently now</p>
 
             <form action="#blank" class="search">
                 <input type="text" class="search__input" placeholder="search your hotels">
@@ -25,32 +24,192 @@
                 </button>
             </form>
 
-            <nav class="user-nav">
+            <nav class="user-nav"> 
                 <div class="user-nav__icon-box">
                     <svg class="user-nav__icon">
-                        <use xlink:href="img/">
+                        <use xlink:href="img/sprite.svg#icon-bookmark">
                     </svg>
                     <span class="user-nav__notification">5</span>
                 </div>
                 <div class="user-nav__icon-box">
                     <svg class="user-nav__icon">
-                        <use xlink:href="img/">
+                        <use xlink:href="img/sprite.svg#icon-chat">
                     </svg>
                     <span class="user-nav__notification">12</span>
                 </div>
 
                 <div class="user-nav__user">
-                    <img src="img/alexandru-acea-1160461-unsplash.jpg" alt="user photo" class="user-nav__user-photo" width="200">
+                    <img src="img/Collins1.jpg" alt="user photo" class="user-nav__user-photo">
                     <span class="user-nav__user-name">Collins</span>
                 </div>
             </nav>
         </header>
-        <div class="content">
+        <figure class="content">
                 <nav class="sidebar">
-                    The navigation
+                    <ul class="side-nav">
+                        <li class="side-nav__item side-nav__item--active">
+                            <a href="#blank" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-home"/>
+                                </svg>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#blank" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-aircraft-take-off"/>
+                                </svg>
+                                <span>Flight</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#blank" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-key"/>
+                                </svg>
+                                <span>Car rental</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#blank" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-map"/>
+                                </svg>
+                                <span>Map</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="legal">
+                        &copy; Trillo &dash; 2019. All rights reserved
+                    </div>
                 </nav>
                 <main class="hotel-view">
-                    The main hotel view and everyother thing
+                    <div class="gallery">
+                        <figure class="gallery__item">
+                            <img src="img/hearthand.jpg" alt="" class="gallery__photo">
+                        </figure>
+                        <figure class="gallery__item">
+                            <img src="img/spiderweb.jpg" alt="" class="gallery__photo">
+                        </figure>
+                        <figure class="gallery__item">
+                            <img src="img/woman-camera.jpg" alt="" class="gallery__photo">
+                        </figure>
+                    </div>
+
+                    <div class="overview">
+                        <h1 class="overview__heading">
+                            Hotel Las Palmas
+                        </h1>
+
+                        <div class="overview__stars">
+                            <svg class="overview__icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star"/>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star"/>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star"/>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star"/>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star"/>
+                            </svg>
+                        </div>
+
+                        <div class="overview__location">
+                            <svg class="overview__icon-location">
+                                <use xlink:href="img/sprite.svg#icon-location-pin"/>
+                            </svg>
+                            <button class="btn-inline">Okigwe, Portugal</button>
+                        </div>
+
+                        <div class="overview__rating">
+                            <div class="overview__rating-average">8.4</div>
+                            <div class="overview__rating-count">455 votes</div>
+                        </div>
+                    </div>
+
+                    <div class="detail">
+                        <div class="description">
+                            <p class="paragraph">
+                                Quoth perched before as remember shore the songs one.
+                                He human your crest bird by what. Then eyes fantastic spoken
+                                rustling in parting moment. And be the raven in the place
+                            </p>
+                            <p class="paragraph">
+                                beguiling dreaming then soul to quoth this ominous the,
+                                dared something shall and implore some.
+                            </p>
+                            <ul class="list">
+                                <li class="list__item">Close the the beach</li>
+                                <li class="list__item">Breakfast included</li>
+                                <li class="list__item">Free airpline shuttle</li>
+                                <li class="list__item">Free wifi in all rooms</li>
+                                <li class="list__item">Pets allowed</li>
+                                <li class="list__item">Good for families</li>
+                                <li class="list__item">Fully air conditioned and heated rooms</li>
+                                <li class="list__item">We speak all languages</li>
+                            </ul>
+
+                            <div class="recommend">
+                                <div class="recommend__count">
+                                    Lucy and her three friends recommended this hotel
+                                </div>
+                                <div class="recommend__friends">
+                                    <img class="recommend__photo" src="img/Collins.jpg" alt="recommended">
+                                    <img class="recommend__photo" src="img/Modester.jpg" alt="recommended">
+                                    <img class="recommend__photo" src="img/Val.jpg" alt="recommended">
+                                    <img class="recommend__photo" src="img/Emeka.jpg" alt="recommended">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="user-review">
+                            <figure class="review">
+                                <blockquote class="review__text">
+                                    And aptly on sent beak chamber separate surcease. The of the things happening in this
+                                    our contemporary society
+                                </blockquote>
+                                <figcaption class="review__user">
+                                    <img src="/img/Collins.jpg" alt="" class="review__photo">
+                                    <div class="review__user-box">
+                                        <p class="review__user-name">Igbo Collins</p>
+                                        <p class="review__user-date">16th January, 2019</p>
+                                    </div>
+                                    <div class="review__rating">7.8</div>
+                                </figcaption>
+                            </figure>
+                            <figure class="review">
+                                <blockquote class="review__text">
+                                    Distinctly fact startled sorrow unhappy and back. Word off youhere and this. Nameless here mortals a undaunted unmerciful if, clasp.And aptly on sent beak chamber separate surcease. The of the things happening in this
+                                    our contemporary society
+                                </blockquote>
+                                <figcaption class="review__user">
+                                    <img src="/img/Modester.jpg" alt="" class="review__photo">
+                                    <div class="review__user-box">
+                                        <p class="review__user-name">Igbo Modester</p>
+                                        <p class="review__user-date">11th January, 2019</p>
+                                    </div>
+                                    <div class="review__rating">8.4</div>
+                                </figcaption>
+                                <button class="btn-inline">Show all<span>&rarr;</span></button>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="cta">
+                            <h2 class="cta__book-now">
+                                Good news! We have four free rooms for your selected dates
+                            </h2>
+                            <button class="btn">
+                                <span class="btn__visible">Book Now!</span>
+                                <span class="btn__invisible">Only 4 rooms left</span>
+                            </button>
+                        </div>
                 </main>
         </div>
     </div>
